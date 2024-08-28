@@ -1,0 +1,123 @@
+
+/* Global settings, para limpar formatação padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial sans-serif;
+}
+
+body {
+    background-color: rgb(238, 100, 50);
+}
+
+section {
+    padding: 50px 0
+}
+
+.max-width {
+    max-width: 1800px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+
+/* Init Section 1*/
+.section-info {
+    color: rgb(185, 7, 7);
+    background-color: #FEECE0;
+    height: 80vh;
+    display: flex;
+
+    min-height: 200px;
+
+}
+
+.section-info .top-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style das informações da seção */
+.info {
+    font-size: 28px;
+}
+
+/* style da imagem da seção  */
+.img-receita {
+    margin: 0 80px 80px 0;
+    height: 200px;
+    width: 200px;
+}
+/* End Section 1*/
+
+
+
+/* Init Section 2*/
+.section-recipe {
+    color: white;
+    background-color: rgb(238, 100, 50);
+    margin: 60px;
+    font-size: large;
+}
+
+.section-recipe .bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Formataçao para todas as li da section*/
+.section-recipe ul li{
+    font-family: Arial;
+    font-size: medium;
+}
+
+.ingredientes {
+    margin-bottom: 20px;
+}
+.modo-preparo {
+    margin-bottom: 20px;
+}
+
+/* div para a lista de ingredientes */
+.modo-preparo ul {
+    list-style: decimal;
+}
+
+/* Formataçao para os titulos de ambos os guias (ingredientes e modo preparo)*/
+.section-recipe .title-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section-recipe .title-icon i {
+    margin-right: 10px;
+}
+
+/* End Section 2*/
+
+
+/* Footer */
+footer{
+    background: rgb(238, 100, 50);
+    color: #fff;
+    padding: 25px 23px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsividade para Grid*/
+@media (max-width: 680px) {
+    .section-recipe .bottom-content {
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
